@@ -2,3 +2,7 @@ name: KatVaults
 version: Kat1.0
 author: MrKitty_Cat
 main: me.camdenorrb.katvaults.KatVaults
+
+commands:
+  test:
+    usage: "/Test"

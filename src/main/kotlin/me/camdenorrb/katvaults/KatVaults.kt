@@ -1,5 +1,6 @@
 package me.camdenorrb.katvaults
 
+import me.camdenorrb.katvaults.cmds.TestCmd
 import org.bukkit.plugin.java.JavaPlugin
 
 
@@ -9,7 +10,9 @@ class KatVaults : JavaPlugin() {
 		instance = this
 	}
 
-	override fun onEnable() = Unit
+	override fun onEnable() {
+		getCommand("test").executor = TestCmd()
+	}
 
 	override fun onDisable() = Unit
 
